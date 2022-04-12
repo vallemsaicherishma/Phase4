@@ -1,0 +1,196 @@
+!doctype html
+html lang=en
+  head
+    titleTitletitle
+    !-- Required meta tags --
+    meta charset=utf-8
+    meta name=viewport content=width=device-width, initial-scale=1, shrink-to-fit=no
+
+    !-- Bootstrap CSS --
+    link rel=stylesheet href=httpsstackpath.bootstrapcdn.combootstrap4.3.1cssbootstrap.min.css integrity=sha384-ggOyR0iXCbMQv3Xipma34MD+dH1fQ784j6cYiJTQUOhcWr7x9JvoRxT2MZw1T crossorigin=anonymous
+  style
+      .dropdown-menu {
+	positionrelative;
+	width100%;
+	top 0px !important;
+    left 0px !important;
+}
+  style  
+head
+  body
+      
+    !-- Optional JavaScript --
+    !-- jQuery first, then Popper.js, then Bootstrap JS --
+    script src=httpscode.jquery.comjquery-3.3.1.slim.min.js integrity=sha384-q8iX+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymousscript
+    script src=httpscdnjs.cloudflare.comajaxlibspopper.js1.14.7umdpopper.min.js integrity=sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 crossorigin=anonymousscript
+    script src=httpsstackpath.bootstrapcdn.combootstrap4.3.1jsbootstrap.min.js integrity=sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFfnJGzIxFDsf4x0xIM+B07jRM crossorigin=anonymousscript
+    
+    script type=textjavascript
+$(document).ready(function(){
+	var data = 
+	[{id222,namesneha,employee_salary100000,employee_age23},{id223,namearpita,employee_salary40000,employee_age33},{id225,namepogi,employee_salary5646545,employee_age546},{id229,nameeer,employee_salary0,employee_age0},{id232,namesdfadf,employee_salary0,employee_age0},{id234,namedfgdgd,employee_salary45,employee_age21},{id236,namenb,employee_salary0,employee_age0},{id237,nameBHsdgygbfvr1bn,employee_salary0,employee_age0},{id238,nameBHsdgygbfvr1bn,employee_salary0,employee_age0},{id239,nameassa,employee_salary0,employee_age0}];
+	var $input = $(.typeahead);
+	$input.typeahead({
+	  source data,
+	  autoSelect true
+	});
+});
+    script
+    div class=container
+    form
+        div class=row
+            div class=col
+              input type=text class=form-control placeholder=First name
+            div
+            div class=col
+              input type=text class=form-control placeholder=Last name
+            div
+          div
+          brbr
+
+        div class=form-group
+          label for=exampleFormControlInput1Email addresslabel
+          input type=email class=form-control id=exampleFormControlInput1 placeholder=name@example.com
+        div
+
+        div class=form-group
+          label for=exampleFormControlSelect1Example selectlabel
+          select class=form-control id=exampleFormControlSelect1
+            option1option
+            option2option
+            option3option
+            option4option
+            option5option
+          select
+        div
+        brbr
+
+        div class=form-group
+          label for=exampleFormControlSelect2Example multiple selectlabel
+          select multiple class=form-control id=exampleFormControlSelect2
+            option1option
+            option2option
+            option3option
+            option4option
+            option5option
+          select
+        div
+        brbr
+
+        div class=form-check
+            input class=form-check-input type=checkbox value= id=defaultCheck1
+            label class=form-check-label for=defaultCheck1
+              Default checkbox
+            label
+          div
+          div class=form-check
+            input class=form-check-input type=checkbox value= id=defaultCheck2 disabled
+            label class=form-check-label for=defaultCheck2
+              Disabled checkbox
+            label
+          div
+          brbr
+
+          div class=form-check
+            input class=form-check-input type=radio name=exampleRadios id=exampleRadios1 value=option1 checked
+            label class=form-check-label for=exampleRadios1
+              Default radio
+            label
+          div
+          div class=form-check
+            input class=form-check-input type=radio name=exampleRadios id=exampleRadios2 value=option2
+            label class=form-check-label for=exampleRadios2
+              Second default radio
+            label
+          div
+          div class=form-check
+            input class=form-check-input type=radio name=exampleRadios id=exampleRadios3 value=option3 disabled
+            label class=form-check-label for=exampleRadios3
+              Disabled radio
+            label
+          div          
+          brbr
+
+          div class=form-size
+          select class=form-control form-control-lg
+            optionLarge selectoption
+          select
+          select class=form-control
+            optionDefault selectoption
+          select
+          select class=form-control form-control-sm
+            optionSmall selectoption
+          select
+          div
+          brbr
+
+        div class=form-group
+            label for=formControlRangeExample Range inputlabel
+            input type=range class=form-control-range id=formControlRange
+        div
+          brbr
+
+        div class=form-group
+          label for=exampleFormControlTextarea1Example textarealabel
+          textarea class=form-control id=exampleFormControlTextarea1 rows=10textarea
+        div
+        brbr
+
+        div class=form-check form-check-inline
+            input class=form-check-input type=checkbox id=inlineCheckbox1 value=option1
+            label class=form-check-label for=inlineCheckbox11label
+          div
+          div class=form-check form-check-inline
+            input class=form-check-input type=checkbox id=inlineCheckbox2 value=option2
+            label class=form-check-label for=inlineCheckbox22label
+          div
+          div class=form-check form-check-inline
+            input class=form-check-input type=checkbox id=inlineCheckbox3 value=option3 disabled
+            label class=form-check-label for=inlineCheckbox33 (disabled)label
+          div
+         brbr          
+
+         div class=form-group
+          input class=form-control typeahead twitter-typeahead data-placeholder=Start typing something to search.. provide=typeahead type=text
+         div
+         brbr 
+
+         !-- disabled form--
+         fieldset disabled
+            div class=form-group
+              label for=disabledTextInputDisabled inputlabel
+              input type=text id=disabledTextInput class=form-control placeholder=Disabled input
+            div
+            div class=form-group
+              label for=disabledSelectDisabled select menulabel
+              select id=disabledSelect class=form-control
+                optionDisabled selectoption
+              select
+            div
+            div class=form-group
+              div class=form-check
+                input class=form-check-input type=checkbox id=disabledFieldsetCheck disabled
+                label class=form-check-label for=disabledFieldsetCheck
+                  Can't check this
+                label
+              div
+            div
+            button type=submit class=btn btn-primarySubmitbutton
+          fieldset
+          brbr 
+
+        div class=form-group style
+            label for=exampleFormControlFile1Example file inputlabel
+            input type=file class=form-control-file id=exampleFormControlFile1
+        div
+        brbr
+
+          div class=form-group mx-sm-3 mb-2
+            label for=inputPassword2 class=sr-onlyPasswordlabel
+            input type=password class=form-control id=inputPassword2 placeholder=Password
+          div
+          button type=submit class=btn btn-primary mb-2Confirm identitybutton
+      form
+     div
+body
+html
